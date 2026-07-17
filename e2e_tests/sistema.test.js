@@ -65,6 +65,7 @@ describe("Pruebas de Sistema (Evaluación PDF)", () => {
 
       // 2. Borrar BD actual y recrearla desde cero
       if (fs.existsSync(DB_FILE)) fs.unlinkSync(DB_FILE);
+      execSync("python manage.py makemigrations", { cwd: ROOT_DIR });
       execSync("python manage.py migrate", { cwd: ROOT_DIR });
       
       // 3. Cargar datos

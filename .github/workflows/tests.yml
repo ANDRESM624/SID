@@ -39,6 +39,8 @@ jobs:
 
     - name: Run Django Server in background
       run: |
+        python manage.py makemigrations
+        python manage.py migrate
         nohup python manage.py runserver 0.0.0.0:8000 &
         sleep 5
 
