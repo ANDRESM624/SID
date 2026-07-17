@@ -51,4 +51,4 @@ jobs:
         INFLUX_TOKEN: ${{ secrets.INFLUX_TOKEN }}
         INFLUX_ORG: ${{ secrets.INFLUX_ORG }}
         INFLUX_BUCKET: ${{ secrets.INFLUX_BUCKET }}
-      run: npx jest
+      run: npx jest --runInBand
