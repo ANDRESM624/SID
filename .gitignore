@@ -16,3 +16,4 @@ django.log
 # Reportes de pruebas
 report.json
 coverage/
+
