@@ -1,0 +1,18 @@
+# Entornos virtuales y paquetes
+node_modules/
+__pycache__/
+*.pyc
+
+# Variables de entorno (Secretos)
+.env
+.env.local
+
+# Bases de datos locales
+db.sqlite3
+db.sqlite3.backup
+*.log
+django.log
+
+# Reportes de pruebas
+report.json
+coverage/
